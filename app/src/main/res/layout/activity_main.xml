@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:padding="20dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/userlogin"
+                android:id="@+id/imageView"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Login "
+                android:textColor="#000"
+                android:textSize="20dp"
+                style="@style/Hyperlink"
+                android:layout_below="@id/imageView"
+                android:id="@+id/alreadyAccountid"
+               />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/alreadyAccountid"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:id="@+id/user_name_lay_id">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/user"
+                    android:tint="#000"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="enter user name"
+                    android:textColorHint="#000"
+                    android:id="@+id/user_edit"
+                    android:paddingLeft="20dp"
+                    android:background="@null"/>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#ccc"
+                android:layout_marginTop="10dp"
+                android:id="@+id/first_view"
+                android:layout_below="@+id/user_name_lay_id"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/first_view"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:id="@+id/password_lay_id">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/passwordicon"
+                    />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="************"
+                    android:textColorHint="#000"
+                    android:textColor="#000"
+                    android:id="@+id/pass_edit"
+                    android:inputType="textPassword"
+                    android:paddingLeft="20dp"
+                    android:background="@null"/>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#ccc"
+                android:layout_marginTop="10dp"
+                android:id="@+id/second_view"
+                android:layout_below="@+id/password_lay_id"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/second_view"
+                android:layout_marginTop="20dp"
+                android:id="@+id/remember_me_lay">
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="#000"
+                    android:id="@+id/checkBox_id"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="REMEBER ME"
+                    android:id="@+id/rem_me"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/checkBox_id"
+                    android:textColor="#000"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="FORGOT PASSWORD"
+                    android:textColor="#000"
+                    style="@style/Hyperlink"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/rem_me"
+                    android:layout_marginLeft="50dp"
+                    />
+
+            </RelativeLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/remember_me_lay"
+                android:background="#36dcce"
+                android:text="LOGIN"
+                android:textColor="#fff"
+                android:layout_marginTop="20dp"
+                android:onClick="done"
+                />
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

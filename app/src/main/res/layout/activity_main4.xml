@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main4"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/left"
+                android:layout_margin="15dp"
+                android:id="@+id/left"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="FIND RIDE"
+                style="@style/Hyperlink"
+                android:layout_toRightOf="@+id/left"
+                android:layout_margin="20dp"
+                android:textColor="#000"
+                android:id="@+id/ride_text"
+                android:textSize="20dp"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#ccc"
+                android:id="@+id/view"
+                android:layout_below="@id/ride_text"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ride_text"
+                android:text="FROM"
+                android:textSize="20dp"
+                android:textColor="#000"
+                android:id="@+id/from_find_text"
+                android:layout_margin="20dp"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/from_find_text"
+                android:layout_below="@+id/ride_text"
+                android:id="@+id/from_edit"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="100dp"
+                android:hint="Enter Location"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#ccc"
+                android:id="@+id/first_view1"
+                android:layout_below="@+id/from_edit"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="100dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/first_view1"
+                android:text="TO"
+                android:textSize="20dp"
+                android:textColor="#000"
+                android:id="@+id/to_text"
+                android:layout_margin="20dp"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/from_find_text"
+                android:layout_below="@+id/first_view1"
+                android:id="@+id/from_edit1"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="100dp"
+                android:hint="Enter Destination"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#ccc"
+                android:id="@+id/first_view"
+                android:layout_below="@+id/from_edit1"
+
+                />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#d7bc0f"
+                android:id="@+id/con_2"
+                android:layout_below="@+id/first_view"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="20dp"
+                    android:src="@drawable/carrrrr"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="RIDE 2"
+                    android:layout_centerInParent="true"
+                    android:textSize="30dp"
+                    />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#d9ff00"
+                android:id="@+id/con_3"
+                android:layout_below="@+id/con_2"
+                >
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="20dp"
+                    android:src="@drawable/carrrrr"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="RIDE 3"
+                    android:layout_centerInParent="true"
+                    android:textSize="30dp"
+                    />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#88ff00"
+                android:id="@+id/con_4"
+                android:layout_below="@+id/con_3"
+                >
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="20dp"
+                    android:src="@drawable/carrrrr"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="RIDE 4"
+                    android:layout_centerInParent="true"
+                    android:textSize="30dp"
+                    />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#05ff86"
+                android:id="@+id/con_5"
+                android:layout_below="@+id/con_4"
+                >
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="20dp"
+                    android:src="@drawable/carrrrr"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="RIDE 5"
+                    android:layout_centerInParent="true"
+                    android:textSize="30dp"
+                    />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#0fd7c6"
+                android:id="@+id/con_6"
+                android:layout_below="@+id/con_5"
+                >
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="20dp"
+                    android:src="@drawable/carrrrr"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="RIDE 6"
+                    android:layout_centerInParent="true"
+                    android:textSize="30dp"
+                    />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#0f1cd7"
+                android:id="@+id/con_7"
+                android:layout_below="@+id/con_6"
+                >
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="20dp"
+                    android:src="@drawable/carrrrr"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="RIDE 7"
+                    android:layout_centerInParent="true"
+                    android:textSize="30dp"
+                    />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#9b0fd7"
+                android:id="@+id/con_8"
+                android:layout_below="@+id/con_7"
+
+                >
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="20dp"
+                    android:src="@drawable/carrrrr"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="RIDE 8"
+                    android:layout_centerInParent="true"
+                    android:textSize="30dp"
+                    />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#00e6ff"
+                android:id="@+id/con_9"
+                android:layout_below="@+id/con_8"
+                >
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="20dp"
+                    android:src="@drawable/carrrrr"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="RIDE 9"
+                    android:layout_centerInParent="true"
+                    android:textSize="30dp"
+                    />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#d70f8e"
+                android:id="@+id/con_10"
+                android:layout_below="@+id/con_9"
+                >
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="20dp"
+                    android:src="@drawable/carrrrr"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="RIDE 10"
+                    android:layout_centerInParent="true"
+                    android:textSize="30dp"
+                    />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ff0112"
+                android:id="@+id/con_11"
+                android:layout_below="@+id/con_10"
+                >
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="20dp"
+                    android:src="@drawable/carrrrr"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="RIDE 11"
+                    android:layout_centerInParent="true"
+                    android:textSize="30dp"
+                    />
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

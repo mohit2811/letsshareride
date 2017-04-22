@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/ee"
+    android:orientation="vertical"
+    android:weightSum="6.0">
+    <RelativeLayout
+        android:id="@+id/relv1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="4.0">
+
+
+
+        <RelativeLayout
+            android:id="@+id/reliner1"
+            android:layout_width="260.0dip"
+            android:layout_height="310.0dip"
+
+            android:layout_centerInParent="true"
+            android:background="@drawable/center_back1"
+            android:gravity="center_vertical"
+            android:paddingLeft="5.0dip"
+            android:paddingRight="5.0dip">
+
+            <TextView
+                android:id="@+id/please_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Admin Login"
+                android:textColor="#ffffffff"
+                android:textSize="24.0sp"
+                android:textStyle="bold" />
+
+
+
+
+            <RelativeLayout
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="45.0dip"
+                android:layout_below="@id/please_login"
+                android:layout_marginTop="10.0dip"
+                android:background="@drawable/username">
+
+                <EditText
+                    android:id="@+id/username"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@null"
+                    android:hint="USER ID"
+                    android:imeOptions="actionNext"
+                    android:paddingLeft="45.0dip"
+                    android:textColorHint="#ffffffff"
+                    android:textColor="#fff"
+                    android:textCursorDrawable="@drawable/colorr" />
+
+            </RelativeLayout>
+
+
+
+            <RelativeLayout
+                android:id="@+id/imageView1s"
+                android:layout_width="wrap_content"
+                android:layout_height="45.0dip"
+                android:layout_below="@id/imageView1"
+                android:layout_marginTop="15.0dip"
+                android:background="@drawable/pass">
+
+                <EditText
+                    android:id="@+id/password"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:hint="PASSWORD"
+                    android:imeOptions="actionDone"
+                    android:inputType="textPassword"
+                    android:paddingLeft="45.0dip"
+                    android:textColorHint="#ffffffff"
+                    android:textColor="#ffffffff"
+                    android:textCursorDrawable="@drawable/colorr" />
+
+            </RelativeLayout>
+            <CheckBox
+                android:id="@+id/checkBox1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/imageView1s"
+                android:layout_below="@id/imageView1s"
+                android:layout_marginTop="10.0dip"
+                android:text="REMEMBER ME"
+                android:textColor="#ffffffff" />
+            <Button
+                android:id="@+id/login_btn"
+                android:layout_width="fill_parent"
+                android:layout_height="35.0dip"
+                android:layout_below="@id/checkBox1"
+                android:layout_marginLeft="20.0dip"
+                android:layout_marginRight="20.0dip"
+                android:layout_marginTop="10.0dip"
+                android:background="#36dcce"
+                android:text="LOGIN"
+                android:textStyle="bold|italic"
+                android:onClick="admin"/>
+
+
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="ADD NEW ADMIN"
+    android:layout_above="@+id/login_btn"
+    android:layout_margin="10dp"
+    android:textColor="#fff"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

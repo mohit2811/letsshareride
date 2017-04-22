@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/maxresdefault"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:id="@+id/offer"
+        />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OFFER RIDE"
+            style="@style/Hyperlink"
+            android:textColor="#000"
+            android:layout_below="@+id/offer"
+            android:layout_margin="20dp"
+            android:textSize="20dp"
+            android:id="@+id/offer_text"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/offer_text"
+            android:text="FROM"
+            android:textSize="20dp"
+            android:textColor="#000"
+            android:id="@+id/from_offer_text"
+            android:layout_margin="20dp"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/from_offer_text"
+            android:layout_below="@+id/offer_text"
+            android:id="@+id/from_offer_edit"
+            android:layout_marginRight="100dp"
+            android:layout_marginTop="10dp"
+
+            android:hint="Enter Location"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#ccc"
+            android:id="@+id/first_offer_view1"
+            android:layout_below="@+id/from_offer_edit"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="100dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/first_offer_view1"
+            android:text="TO"
+            android:textSize="20dp"
+            android:textColor="#000"
+            android:id="@+id/to_offer_text"
+            android:layout_margin="20dp"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/from_offer_text"
+            android:layout_below="@+id/first_offer_view1"
+            android:id="@+id/from_offer_edit1"
+            android:hint="Enter Destination"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="100dp"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#ccc"
+            android:id="@+id/first_offer_view"
+            android:layout_below="@+id/from_offer_edit1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="100dp"/>
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/first_offer_view"
+            android:background="#36dcce"
+            android:text="OFFER"
+            android:id="@+id/offer_butt"
+            android:textColor="#fff"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:onClick="offer"
+
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/switc1111"
+            android:background="@drawable/updown"
+            android:padding="5dp"
+            android:id="@+id/imageView2"
+            android:layout_alignTop="@+id/from_offer_text"
+            android:layout_alignRight="@+id/offer"
+            android:layout_alignEnd="@+id/offer"
+            android:layout_marginTop="18dp" />
+
+    </RelativeLayout>
+       </ScrollView>
+</RelativeLayout>

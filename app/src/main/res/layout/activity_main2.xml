@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+   >
+<ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/home"
+    android:layout_margin="20dp"
+    android:layout_centerHorizontal="true"
+    android:id="@+id/lets"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/login_but"
+        android:text="LOGIN"
+        android:layout_below="@+id/lets"
+        android:onClick="login"
+        android:layout_margin="30dp"
+        android:textSize="25dp"
+        android:background="@drawable/button"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Sign_but"
+        android:text="SIGN UP"
+        android:textSize="25dp"
+        android:layout_margin="30dp"
+        android:layout_below="@+id/login_but"
+        android:background="@drawable/button"
+        android:layout_centerHorizontal="true"
+        android:onClick="sign"
+        />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SKIP"
+            android:textSize="25dp"
+            android:layout_below="@+id/Sign_but"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="30dp"
+            android:textColor="#000"
+            android:clickable="true"
+            android:onClick="skip"
+            style="@style/Hyperlink"
+            android:id="@+id/skip"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LOGIN AS ADMIN"
+            android:textSize="15dp"
+            android:layout_below="@+id/skip"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            android:textColor="#000"
+            android:clickable="true"
+            style="@style/Hyperlink"
+            android:onClick="admin"/>
+
+</RelativeLayout>
